@@ -1,0 +1,20 @@
+/* General css */
+body {
+    display: grid;
+    line-height: 1.5;
+}
+header {
+    background-color: green;
+}
+
+/* Navigation */
+
+nav.row {
+    text-align: center;
+}
+nav.h1 {
+    float: left;
+}
+nav.ul {
+    align-items: center;
+}
