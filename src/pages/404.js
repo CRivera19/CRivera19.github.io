@@ -1,9 +1,10 @@
-import React from 'react';
-import Box from 'components/box';
-import Layout from 'components/layout';
+import React from 'react'
 
-export default () => (
-  <Layout>
-    <Box>Not found.</Box>
-  </Layout>
-);
+const NotFoundPage = () => (
+  <div>
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  </div>
+)
+
+export default NotFoundPage
