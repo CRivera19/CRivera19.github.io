@@ -2,17 +2,20 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
-import Bio from '../components/Bio'
+import Bio from '../components/Bio/Bio'
 import { rhythm } from '../utils/typography'
+import '../components/styles/styles.css'
+import '../components/styles/normalize.css'
 
-class BlogIndex extends React.Component {
+class Index extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
+      <div style={{ 
+        display:'grid',
+        justifyContent:'center'}}>
         <Helmet title={siteTitle} />
         <Bio />
         {posts.map(({ node }) => {
@@ -38,7 +41,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {
