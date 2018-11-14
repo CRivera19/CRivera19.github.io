@@ -1,14 +1,26 @@
 /* Default */
-
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Merriweather', serif;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
 
 /* body */
-
+body {
+  background: gray;
+}
 
 /* header */
-#main-header img {
-  width: 100%;
-  height: 100%;
+#main-header {
+  background: white;
 }
+#main-header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #main-header .port-item {
   width:30%;
 }
@@ -16,8 +28,10 @@
   opacity: 0.8;
   cursor: pointer;
 }
-/* main */
-
+/* Home */
+.card {
+  height:70vh;
+}
 
 /* aside */
 
@@ -37,5 +51,12 @@
 @media (min-width:1199px) {
   .port-item {
     padding: 3em !important;
+  }
+}
+/* Small */
+@media (min-width:320px) {
+  #wrapper {
+    padding:0;
+  }
   }
 }
