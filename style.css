@@ -9,6 +9,7 @@ p {
 /* body */
 body {
   background: rgb(238, 238, 238);
+  
 }
 /* Wrapper */
 #wrapper {
@@ -21,12 +22,14 @@ body {
 #main-header {
   text-align: center
 }
-#main-header-img {
-}
 /* work */
 #card-deck {
   display: grid;
   grid-template-columns: repeat(auto-fill, max(1fr));
+}
+#work h3 {
+  border-bottom: 1px solid red;
+  display: inline-flex;
 }
 
 /* aside */
@@ -36,9 +39,13 @@ body {
 
 
 /* Typeography */
-
+h2 {
+  border-bottom: 1px solid blue;
+  display: inline;
+}
 
 /* color */
+
 
 /* lg */
 @media (min-width:1199px) {
@@ -51,12 +58,11 @@ body {
 #card-deck {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-}
+  }
 }
 /* Small */
 @media (min-width:320px) {
   #wrapper {
     padding:0;
-  }
   }
 }
