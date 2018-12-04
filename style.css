@@ -8,29 +8,25 @@ p {
 
 /* body */
 body {
-  background: gray;
+  background: rgb(238, 238, 238);
 }
-
+/* Wrapper */
+#wrapper {
+  max-width: 900px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* header */
 #main-header {
-  background: white;
+  text-align: center
 }
 #main-header-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-#main-header .port-item {
-  width:30%;
-}
-#main-header .port-item:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-/* Home */
-.card {
-  height:70vh;
+/* work */
+#card-deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, max(1fr));
 }
 
 /* aside */
@@ -43,15 +39,19 @@ body {
 
 
 /* color */
-.bg-black {
-  color: #fff;
-  background:#000;
-}
+
 /* lg */
 @media (min-width:1199px) {
   .port-item {
     padding: 3em !important;
   }
+}
+/* md */
+@media (min-width:500px) {
+#card-deck {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
 }
 /* Small */
 @media (min-width:320px) {
