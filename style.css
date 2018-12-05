@@ -19,29 +19,45 @@ body {
   margin-right: auto;
 }
 /* header */
-#main-header {
-  text-align: center
+#header {
+  text-align: center;
+
+}
+#header h1 {
+  border-bottom: 3px solid green;
+  margin: 5px;
+  display: inline-block;
+}
+#header h3 {
+  margin: 5px;
+  border-bottom: 3px solid rgb(255, 0, 0);
+  display: inline-block;
 }
 /* work */
-#card-deck {
+.card-deck {
   display: grid;
   grid-template-columns: repeat(auto-fill, max(1fr));
 }
 #work h3 {
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid red;
   display: inline-flex;
+  align-content: center;
 }
-
 /* aside */
 
 
 /* footer */
-
+#contact .card {
+  margin: 8px;
+}
 
 /* Typeography */
 h2 {
-  border-bottom: 1px solid blue;
+  border-bottom: 3px solid green;
   display: inline;
+}
+p,h4,h3 {
+  margin:8px;
 }
 
 /* color */
@@ -55,14 +71,25 @@ h2 {
 }
 /* md */
 @media (min-width:500px) {
-#card-deck {
+.card-deck {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   }
+#contact .card {
+  margin: 2em;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
 }
 /* Small */
-@media (min-width:320px) {
-  #wrapper {
-    padding:0;
+@media (max-width:338px) {
+  #header h1 , h3 {
+    font-size:1.5em;
+  }
+  #header h3 {
+    font-size:1em;
+    margin-bottom: 1em;
   }
 }
