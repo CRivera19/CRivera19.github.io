@@ -1,95 +1,119 @@
-/* Default */
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Merriweather', serif;
+Default
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
 }
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-
 /* body */
 body {
-  background: rgb(238, 238, 238);
-  
+  background: #b6cfb6;
+  margin: 0;
 }
 /* Wrapper */
 #wrapper {
-  max-width: 900px;
+  max-width: 1200px;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 /* header */
 #header {
   text-align: center;
-
+  height: 150px;
+  padding-top: 3em;
+  background-color: #339966;
+  border-bottom: 3px solid #003333;
+  color: #003333;
 }
 #header h1 {
-  border-bottom: 3px solid green;
   margin: 5px;
+  padding: auto 0;
   display: inline-block;
 }
 #header h3 {
   margin: 5px;
-  border-bottom: 3px solid rgb(255, 0, 0);
   display: inline-block;
 }
-/* work */
+/* About */
+#about {
+  max-width: 600px;
+  margin: auto;
+  height: 150px;
+  padding: 3em 0;
+}
+/* Portfolio */
+#portfolio {
+  margin: 0.8em;
+}
 .card-deck {
   display: grid;
   grid-template-columns: repeat(auto-fill, max(1fr));
 }
-#work h3 {
-  border-bottom: 3px solid red;
+#portfolio h3 {
+  background-color: #339966;
+
   display: inline-flex;
   align-content: center;
 }
 /* aside */
 
-
 /* footer */
+#contact {
+  background-color: #339966;
+}
 #contact .card {
   margin: 8px;
 }
 
 /* Typeography */
 h2 {
-  border-bottom: 3px solid green;
   display: inline;
 }
-p,h4,h3 {
+/* p,h4,h3 {
   margin:8px;
-}
+} */
 
 /* color */
 
-
 /* lg */
-@media (min-width:1199px) {
+@media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
   }
 }
 /* md */
-@media (min-width:500px) {
-.card-deck {
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+@media (min-width: 500px) {
+  #about {
+    margin: 0.8em;
   }
-#contact .card {
-  margin: 2em;
-  text-align: center;
-}
-h3 {
-  text-align: center;
-}
+  .card-deck {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  #contact .card {
+    margin: 2em;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
 }
 /* Small */
-@media (max-width:338px) {
-  #header h1 , h3 {
-    font-size:1.5em;
+@media (max-width: 338px) {
+  #header h1,
+  h3 {
+    font-size: 1.5em;
   }
   #header h3 {
-    font-size:1em;
+    font-size: 1em;
     margin-bottom: 1em;
+  }
+  #about {
+    margin: 0.8em;
   }
 }

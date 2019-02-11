@@ -1,0 +1,55 @@
+body {
+    background-color: #339966;
+    margin: 0;
+}
+Default,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+#wrapper {
+    display: grid;
+    grid-template-rows: 75px auto 75px;
+    height: 100vh;
+}
+#header {
+    font-size: 75%;
+    margin: 0.5em;
+}
+#about {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    background-color: #cfcfcf;
+}
+#about img {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+#about h2 {
+    margin: 0.5em;
+    align-self: end;
+}
+#about p {
+    margin: 0.8em;
+}
+#portfolio, #contact {
+    display: none;
+}
+#footer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-self: center;
+    justify-content: space-around;
+    border-top: 3px solid  #003333;
+}
+#footer img {
+    width: 70px;
+    height: 70px;
+}
