@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+Default,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Merriweather", serif;
+  margin: 0;
+}
+#wrapper {
+    height: 100vh;
+    max-width: 90%;
+    margin: auto;
+}
+.card img {
+    max-width: 240px;;
+}
+#about p {
+    max-width: 80%;
+    margin: 1em auto;
+}
+#contact {
+    margin: 1em auto;
+}
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    margin: 1em;
+}
+.card-text {
+    max-width: 240px;
+}
