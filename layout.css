@@ -23,6 +23,9 @@ p {
   font-family: "Merriweather", serif;
   margin: 0;
 }
+h1, h2, h3 {
+    color: rgb(255,255,255,0.9);
+}
 #wrapper {
     max-width: 90%;
     margin: auto;
@@ -31,7 +34,7 @@ p {
     padding-top: 1em;
 }
 .card img {
-    max-width: 240px;;
+    max-width: 300px;;
 }
 #about p {
     margin: 1em auto;
@@ -50,6 +53,22 @@ p {
 .card-text {
     max-width: 240px;
 }
-@media (max-width:640) {
+a:link, a:visited {
+    background-color: rgba(50,142,113,1);
+    color: white;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: rgba(0,0,0,1);
+  }
 
+@media (min-width: 800px) {
+    #wrapper {
+        max-width: 800px;
+    }
 }
