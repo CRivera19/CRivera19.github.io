@@ -1,16 +1,28 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 body {
-    height: 100%;
-    margin: 0;
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(50,142,113,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(50,142,113,1) 100%);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(50,142,113,1) 100%);0
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#328e71",GradientType=1); 
-    color: rgb(255,255,255,0.7);
-    background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(50, 142, 113, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(50, 142, 113, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(50, 142, 113, 1) 100%
+  );
+  0filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#328e71",GradientType=1);
+  color: rgb(255, 255, 255, 0.7);
+  background-attachment: fixed;
 }
 Default,
 h1,
@@ -20,55 +32,69 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Merriweather", serif;
   margin: 0;
 }
-h1, h2, h3 {
-    color: rgb(255,255,255,0.9);
+h1,
+h2,
+h3 {
+  color: rgb(255, 255, 255, 0.9);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+p {
+  font-family: "Cousine", monospace;
 }
 #wrapper {
-    max-width: 90%;
-    margin: auto;
+  max-width: 90%;
+  margin: auto;
 }
 #personal {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 .card img {
-    max-width: 300px;;
+  max-width: 300px;
 }
 #about p {
-    margin: 1em auto;
+  margin: 1em auto;
 }
 #contact {
-    margin: 1em auto;
+  margin: 1em auto;
 }
 .card-deck {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .card {
-    margin: 1em;
+  margin: 1em;
 }
 .card-text {
-    max-width: 240px;
+  max-width: 240px;
 }
-a:link, a:visited {
-    background-color: rgba(50,142,113,1);
-    color: white;
-    padding: 1em;
-    margin: 0.5em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: rgba(0,0,0,1);
-  }
+a:link,
+a:visited {
+  background-color: rgba(50, 142, 113, 1);
+  color: white;
+  padding: 1em;
+  margin-right: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: rgba(0, 0, 0, 1);
+}
 
 @media (min-width: 800px) {
-    #wrapper {
-        max-width: 800px;
-    }
+  #wrapper {
+    max-width: 800px;
+  }
 }
