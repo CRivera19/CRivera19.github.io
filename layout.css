@@ -4,25 +4,8 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(50, 142, 113, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(50, 142, 113, 1) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(50, 142, 113, 1) 100%
-  );
-  0filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#328e71",GradientType=1);
-  color: rgb(255, 255, 255, 0.7);
-  background-attachment: fixed;
+  background: #fcfcf3;
+
 }
 Default,
 h1,
@@ -37,7 +20,7 @@ p {
 h1,
 h2,
 h3 {
-  color: rgb(255, 255, 255, 0.9);
+  color: #05668d;
 }
 h1,
 h2,
@@ -54,8 +37,26 @@ p {
   max-width: 90%;
   margin: auto;
 }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 90%;
+  background-color: #FCFCF3;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items:  flex-end;
+}
+nav img {
+  border: 5px solid #05668d;
+  border-radius: 90px; 
+}
 #personal {
-  padding-top: 1em;
+  padding-top: 5em;
 }
 .card img {
   max-width: 300px;
@@ -65,6 +66,8 @@ p {
 }
 #contact {
   margin: 1em auto;
+  text-align: center;
+  padding-bottom: 2em;
 }
 .card-deck {
   display: flex;
@@ -79,18 +82,22 @@ p {
 }
 a:link,
 a:visited {
-  background-color: rgba(50, 142, 113, 1);
+  background-color: #05668d;
   color: white;
-  padding: 1em;
+  padding: 0.5em;
   margin-right: 0.5em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border: 1px solid #FCFCF3;
+
 }
 
 a:hover,
 a:active {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #FCFCF3;
+  border: 1px solid #05668d;
+  color: #05668d;
 }
 
 @media (min-width: 800px) {
