@@ -44,6 +44,7 @@ nav {
   position: fixed;
   z-index: 1;
   width: 90%;
+  max-width: 800px;
   background-color: #FCFCF3;
 }
 nav ul {
@@ -61,7 +62,13 @@ nav img {
 .card img {
   max-width: 300px;
 }
+#about h2 {
+  padding-top: 1em;
+}
 #about p {
+  margin: 1em auto;
+}
+#tech {
   margin: 1em auto;
 }
 #contact {
@@ -76,9 +83,11 @@ nav img {
 }
 .card {
   margin: 1em;
+  text-align: center;
 }
 .card-text {
-  max-width: 240px;
+  max-width: 290px;
+  margin: auto;
 }
 a:link,
 a:visited {
@@ -103,5 +112,11 @@ a:active {
 @media (min-width: 800px) {
   #wrapper {
     max-width: 800px;
+  }
+  .card img {
+    max-width: 365px;
+  }
+  .card-text {
+    max-width: 365px;
   }
 }
