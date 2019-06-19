@@ -1,119 +1,149 @@
-Default
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background: #fcfcf3;
+
+}
+Default,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  color: #05668d;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
 }
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cousine", monospace;
 }
-/* body */
-body {
-  background: #b6cfb6;
-  margin: 0;
-}
-/* Wrapper */
 #wrapper {
-  max-width: 1200px;
-  padding: 0;
-  margin: 0 auto;
-}
-/* header */
-#header {
-  text-align: center;
-  height: 150px;
-  padding-top: 3em;
-  background-color: #339966;
-  border-bottom: 3px solid #003333;
-  color: #003333;
-}
-#header h1 {
-  margin: 5px;
-  padding: auto 0;
-  display: inline-block;
-}
-#header h3 {
-  margin: 5px;
-  display: inline-block;
-}
-/* About */
-#about {
-  max-width: 600px;
+  max-width: 90%;
   margin: auto;
-  height: 150px;
-  padding: 3em 0;
 }
-/* Portfolio */
-#portfolio {
-  margin: 0.8em;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 90%;
+  max-width: 800px;
+  background-color: transparent;
+  padding-top: 1em; 
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items:  flex-end;
+}
+nav img {
+  border-radius: 90px;
+  background-color: #05668d; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#personal {
+  padding-top: 5em;
+}
+.card img {
+  max-width: 300px;
+}
+#about h2 {
+  padding-top: 1em;
+}
+#about p {
+  margin: 1em auto;
+}
+#tech {
+  margin: 1em auto;
+}
+#contact {
+  margin: 1em auto;
+  text-align: center;
+  padding-bottom: 2em;
 }
 .card-deck {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, max(1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-#portfolio h3 {
-  background-color: #339966;
+.card {
+  margin: 1em;
+  text-align: center;
+}
+.card-text {
+  max-width: 290px;
+  margin: auto;
+}
+a:link,
+a:visited {
+  background-color: #05668d;
+  color: white;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #FCFCF3;
 
-  display: inline-flex;
-  align-content: center;
-}
-/* aside */
-
-/* footer */
-#contact {
-  background-color: #339966;
-}
-#contact .card {
-  margin: 8px;
 }
 
-/* Typeography */
-h2 {
-  display: inline;
+a:hover,
+a:active {
+  background-color: #FCFCF3;
+  border: 1px solid #05668d;
+  color: #05668d;
 }
-/* p,h4,h3 {
-  margin:8px;
-} */
 
-/* color */
-
-/* lg */
-@media (min-width: 1199px) {
-  .port-item {
-    padding: 3em !important;
+@media (min-width: 800px) {
+  #wrapper {
+    max-width: 800px;
   }
+  .card img {
+    max-width: 365px;
+  }
+  .card-text {
+    max-width: 365px;
+  }
+  
 }
-/* md */
-@media (min-width: 500px) {
-  #about {
-    margin: 0.8em;
+@media (min-width: 1000px) {
+  nav img {
+    animation: aniNav 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
-  .card-deck {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  @keyframes aniNav {
+    0% {}
+    100% {margin-left: -5em;
+          margin-top: 1em;}
   }
-  #contact .card {
-    margin: 2em;
-    text-align: center;
+  nav ul {
+    animation: navUl 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
-  h3 {
-    text-align: center;
+  @keyframes navUl {
+    0% {}
+    100% {margin-right: -13em;
+          margin-top: 1em;}
   }
-}
-/* Small */
-@media (max-width: 338px) {
-  #header h1,
-  h3 {
-    font-size: 1.5em;
-  }
-  #header h3 {
-    font-size: 1em;
-    margin-bottom: 1em;
-  }
-  #about {
-    margin: 0.8em;
   }
 }
