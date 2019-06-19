@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
@@ -45,7 +46,8 @@ nav {
   z-index: 1;
   width: 90%;
   max-width: 800px;
-  background-color: #FCFCF3;
+  background-color: transparent;
+  padding-top: 1em; 
 }
 nav ul {
   display: flex;
@@ -53,8 +55,9 @@ nav ul {
   align-items:  flex-end;
 }
 nav img {
-  border: 5px solid #05668d;
-  border-radius: 90px; 
+  border-radius: 90px;
+  background-color: #05668d; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #personal {
   padding-top: 5em;
@@ -118,5 +121,29 @@ a:active {
   }
   .card-text {
     max-width: 365px;
+  }
+  
+}
+@media (min-width: 1000px) {
+  nav img {
+    animation: aniNav 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes aniNav {
+    0% {}
+    100% {margin-left: -5em;
+          margin-top: 1em;}
+  }
+  nav ul {
+    animation: navUl 1s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes navUl {
+    0% {}
+    100% {margin-right: -13em;
+          margin-top: 1em;}
+  }
   }
 }
