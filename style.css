@@ -31,6 +31,9 @@ h5,
 h6 {
   font-family: "Playfair Display", serif;
 }
+h4 {
+  font-size: 120%;
+}
 p {
   font-family: "Cousine", monospace;
 }
@@ -70,6 +73,7 @@ nav img {
 }
 #about p {
   margin: 1em auto;
+  font-size: 120%;
 }
 #tech {
   margin: 1em auto;
@@ -80,17 +84,31 @@ nav img {
   padding-bottom: 2em;
 }
 .card-deck {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+  justify-items: stretch;
 }
 .card {
   margin: 1em;
   text-align: center;
 }
+.card-title {
+  font-size:1.6rem;
+  padding-bottom: 0.5em;
+}
+.card a:link {
+  background-color: transparent;
+}
+#outside-link {
+  color: #05668d;
+  margin-top: 10px;
+}
 .card-text {
-  max-width: 290px;
+  padding-top: 0.5em;
+  max-width: 300px;
   margin: auto;
+  font-size:1.2rem;
 }
 a:link,
 a:visited {
